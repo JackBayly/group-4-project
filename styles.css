@@ -1,0 +1,55 @@
+body{ background-color: rgba(238, 238, 238, 0.966) !important;
+    display: flex;
+    
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  
+}
+.card {
+    border: none!important;
+    border-radius: 5px!important;
+}
+.card-body {
+   display: flex;
+   height: 325px;
+    width: 325px;
+    border: 2px black solid;
+    border-radius: 5px;
+   flex-direction: column;
+   
+  
+}
+
+.custom-status-circle{
+margin-left: auto;   
+font-size: 1.5rem;color: #34992bda; 
+}
+
+.status-danger-btns-row {
+    display: flex;
+    width: 200px;
+    align-self: center;
+    justify-content: space-between;
+
+}
+
+.task-content {
+    width: 200px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.task-content-row {
+   display: flex;
+   
+   justify-content: space-between;
+}
+.bold {
+    font-weight: bold;
+}
+.btn-primary {
+   background-color: #34992bda!important;
+}
