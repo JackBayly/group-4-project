@@ -8,6 +8,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <main>
+        <form>
+            <div class="header">
+                <h2>Task List</h2>  
+            </div>
+        
+            <div>
+                <h3>Project Tasks</h3>
+            </div>
+        
+            <div>
+                <p>Task Name</p>
+                <input type="text" name="task-name-text-field">
+            </div>
+            
+            <div class="assigned-to">
+                <p>Assigned To</p>
+                <select>
+                    <option></option>
+                    <option>Carlos</option>
+                    <option>Dunni</option>
+                    <option>Dunamis</option>
+                    <option>Jack</option>
+                    <option>Jocelyn</option>
+                    <option>Paris</option>
+                </select>
+            </div>
+            <div>
+                <p>Description</p>
+                
+                <textarea id="description" name="description" rows="5" cols="25"></textarea>
+            </div>
+            <div>
+                <p>Assigned Date</p>
+                
+                <input type="date" id="assigned-date" name="assigned-date">
+                
+                <p>Due Date</p>
+                <input type="date" id="due-date" name="due-date">
+            </div>
+            <div>
+                <input type="submit" value="Add Task">
+            </div>
+        </form>
+    </main>
+    
     
 </body>
 </html>
