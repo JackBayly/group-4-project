@@ -1,0 +1,40 @@
+.body {
+    background-color: #778da9;
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2 {
+    background-color: #0d1b2a;
+    padding: 25px 0px;
+    color: white;
+}
+
+h2 {
+    margin: 25px 0px;
+}
+
+.footer {
+    background-color: #0d1b2a;
+    color: lightgrey;
+    padding: 15px 0px;
+}
+
+.form-row {
+    padding-left: 15px;
+}
+
+.container {
+    margin: 20px;
+}
+
+.card-columns {
+    padding: 15px;
+}
+
+.card-title {
+    padding: 20px;
+}
+
+.card-body {
+    background-color: #e0e1dd;
+}
