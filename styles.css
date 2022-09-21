@@ -12,7 +12,15 @@ h1, h2 {
 h2 {
     margin: 25px 0px;
 }
-
+.custom-align-label-select {
+    display: flex;
+    flex-direction: column;
+}
+#select {
+ height: 38px;
+ border-radius: 0.25rem;
+ transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
 .footer {
     background-color: #0d1b2a;
     color: lightgrey;
@@ -37,4 +45,13 @@ h2 {
 
 .card-body {
     background-color: #e0e1dd;
+    overflow: hidden;
+    max-height: 340px; 
+}
+.card-text {
+    overflow: hidden;
+    max-height: 48px;
+}
+.card-text:hover {
+    overflow:scroll;
 }
