@@ -1,11 +1,14 @@
+// this instatiate a task manager
+const tasks1 = new TaskManager();
 //Form validation function
 //Currently gets values from inputs in form and console logs them
-function validFormFieldInput(data) {
+
+function validFormFieldInput() {
 //inputs and their values
     const taskName = document.querySelector('#taskname');
     const name = taskName.value;
 
-    const taskDescription = document.querySelector('#discription');
+    const taskDescription = document.querySelector('#description');
     const  description = taskDescription.value;
    
     const taskAssignedTo = document.querySelector('#select');
@@ -14,7 +17,7 @@ function validFormFieldInput(data) {
     const taskDateAssigned = document.querySelector('#assign-to');
     const dateAssigned = taskDateAssigned.value;
  
-    const taskDueDate = document.querySelector('#Duedate');
+    const taskDueDate = document.querySelector('#dueDate');
     const dueDate = taskDueDate.value;
    
     console.log(`Name: ${name}, Description: ${description}, Assigned To: ${assignedTo}, Date Assigned: ${dateAssigned}, Due Date: ${dueDate}`);
@@ -39,6 +42,8 @@ function validFormFieldInput(data) {
     } else {
         const errorMsg = document.querySelector('#errorMsg');
         errorMsg.remove();
+        tasks1.addTasks({name, description, assignedTo, dateAssigned, dueDate})
+        console.log(tasks1.tasks);
     }
 
 };
@@ -46,4 +51,6 @@ function validFormFieldInput(data) {
 //On click of form button the validFormSubmitBtn function gets called
 const formSubmitBtn = document.querySelector('#formSubmitBtn');
 formSubmitBtn.addEventListener("click", validFormFieldInput);
+
+
 
