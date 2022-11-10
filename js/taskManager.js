@@ -45,6 +45,7 @@ constructor(currentId) {
     //store tasklist item in a variable
     let currentTask = this.tasks[taskNumber]
     let date = new Date(currentTask.dueDate)
+    console.log(date)
     //change date format to mm/dd/yyyy
     let formattedDate = date.toLocaleDateString()
     //task 6 step 2 #3.iv
@@ -53,6 +54,7 @@ constructor(currentId) {
     }
     let tasksHtml = tasksHtmlList.join('\n')
     console.log(tasksHtml);
+  
  
     
     document.querySelector("#taskList").innerHTML = tasksHtml;
