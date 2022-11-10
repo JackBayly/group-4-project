@@ -57,4 +57,9 @@ const formSubmitBtn = document.querySelector('#formSubmitBtn');
 formSubmitBtn.addEventListener("click", validFormFieldInput);
 
 
-
+const taskList = document.querySelector("#taskList");
+//checks to see if mark as done was clicked
+taskList.addEventListener('click', (event) => {
+    let doneClicked = event.target.classList.contains('done-button')
+    console.log(doneClicked);
+});
