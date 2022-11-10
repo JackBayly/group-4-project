@@ -20,7 +20,7 @@ function validFormFieldInput() {
     const taskDueDate = document.querySelector('#dueDate');
     const dueDate = taskDueDate.value;
    
-    console.log(`Name: ${name}, Description: ${description}, Assigned To: ${assignedTo}, Date Assigned: ${dateAssigned}, Due Date: ${dueDate}`);
+    // console.log(`Name: ${name}, Description: ${description}, Assigned To: ${assignedTo}, Date Assigned: ${dateAssigned}, Due Date: ${dueDate}`);
 //form validation
     if(name==""||description==""||assignedTo==""||dateAssigned==""||dueDate==""){
         
@@ -40,17 +40,26 @@ function validFormFieldInput() {
       form.insertBefore(div, null);
      
     } else {
-        const errorMsg = document.querySelector('#errorMsg');
-        errorMsg.remove();
-        tasks1.addTasks({name, description, assignedTo, dateAssigned, dueDate})
+        // const errorMsg = document.querySelector('#errorMsg');
+        // errorMsg.remove();
+        tasks1.addTasks(name, description, assignedTo, dateAssigned, dueDate)
+        tasks1.render();
         console.log(tasks1.tasks);
     }
 
 };
+
+
+
 
 //On click of form button the validFormSubmitBtn function gets called
 const formSubmitBtn = document.querySelector('#formSubmitBtn');
 formSubmitBtn.addEventListener("click", validFormFieldInput);
 
 
-
+const taskList = document.querySelector("#taskList");
+//checks to see if mark as done was clicked
+taskList.addEventListener('click', (event) => {
+    let doneClicked = event.target.classList.contains('done-button')
+    console.log(doneClicked);
+});
