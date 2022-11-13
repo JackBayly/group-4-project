@@ -63,7 +63,7 @@ const taskList = document.querySelector("#taskList");
 taskList.addEventListener('click', (event) => {
     let doneClicked = event.target.classList.contains('done-button')
     console.log(doneClicked);
-    // if (doneClicked) {
-    //     console.log('clicked')
-    // } else {console.log('not clicked')}
+    if (doneClicked) {
+     console.log('clicked')
+    } else {console.log('not clicked')}
 })
