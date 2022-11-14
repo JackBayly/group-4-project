@@ -47,7 +47,7 @@ constructor(currentId) {
     let date = new Date(currentTask.dueDate)
     console.log(date)
     //change date format to mm/dd/yyyy
-    let formattedDate = date.toLocaleDateString()
+    let formattedDate = (date.getMonth() + 1) + "/" + (date.getDate() + 1) + "/" + date.getFullYear();
     //task 6 step 2 #3.iv
     let taskHTML = createTaskHtml(currentTask.name, currentTask.description, currentTask.assignTo, formattedDate, currentTask.status)
     tasksHtmlList.push(taskHTML)
