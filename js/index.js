@@ -46,6 +46,7 @@ function validFormFieldInput() {
         tasks1.addTasks(name, description, assignedTo, dueDate)
         tasks1.render();
         console.log(tasks1.tasks);
+       console.log(tasks1.getTaskById(1));
     }
 
 };
@@ -58,12 +59,15 @@ const formSubmitBtn = document.querySelector('#formSubmitBtn');
 formSubmitBtn.addEventListener("click", validFormFieldInput);
 
 
-const taskList = document.querySelector("#taskList");
+let taskList = document.querySelector("#taskList");
 //checks to see if mark as done was clicked
 taskList.addEventListener('click', (event) => {
     let doneClicked = event.target.classList.contains('done-button')
     console.log(doneClicked);
-    if (doneClicked) {
-     console.log('clicked')
-    } else {console.log('not clicked')}
-})
+     if (doneClicked) {
+        taskList = event.target.closest("li") 
+         console.log('clicked')
+     } else {console.log('not clicked')}
+
+     console.log(taskList)
+} )
