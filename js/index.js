@@ -45,8 +45,9 @@ function validFormFieldInput() {
         // errorMsg.remove();
         tasks1.addTasks(name, description, assignedTo, dueDate)
         tasks1.render();
-        console.log(tasks1.tasks);
-       console.log(tasks1.getTaskById(1));
+        //console.log(tasks1.tasks);
+       // let result = tasks1.getTaskById(1);
+        //console.log(result);
     }
 
 };
@@ -63,11 +64,20 @@ let taskList = document.querySelector("#taskList");
 //checks to see if mark as done was clicked
 taskList.addEventListener('click', (event) => {
     let doneClicked = event.target.classList.contains('done-button')
-    console.log(doneClicked);
+   // console.log(doneClicked);
+   
      if (doneClicked) {
-        taskList = event.target.closest("li") 
-         console.log('clicked')
-     } else {console.log('not clicked')}
+        taskList = event.target.closest("li");
+        let taskId   = Number(taskList.id);
 
-     console.log(taskList)
-} )
+        let task =  tasks1.getTaskById(taskId);
+       task.status = "Done";
+       tasks1.render();
+       
+        console.log('clicked')
+     } else {
+    //    console.log('not clicked')
+    }
+
+    // console.log(taskList)
+} ) 

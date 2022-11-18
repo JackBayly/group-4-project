@@ -10,7 +10,7 @@ const createTaskHtml = (name, description, assignedTo, dueDate, status, currentI
                         <p class="due">Due: ${dueDate}</p>
                         <p class="card-text">Task Description: ${description}</p>
                         <span class="status"> ${status}</span> <br>
-                            <a href="#" class="btn btn-success">Done</a>
+                           <a href="#" class="btn btn-success">Done</a>
                             <a href="#" class="btn btn-danger">Delete</a> 
                       
                         <button type="button" class="btn btn-outline-success done-button" >Mark as Done</button>
@@ -48,7 +48,7 @@ constructor(currentId) {
     //store tasklist item in a variable
     let currentTask = this.tasks[taskNumber]
     let date = new Date(currentTask.dueDate)
-    console.log(date)
+    //console.log(date)
     //change date format to mm/dd/yyyy
     let formattedDate = (date.getMonth() + 1) + "/" + (date.getDate() + 1) + "/" + date.getFullYear();
     //task 6 step 2 #3.iv
@@ -56,22 +56,23 @@ constructor(currentId) {
     tasksHtmlList.push(taskHTML)
     }
     let tasksHtml = tasksHtmlList.join('\n')
-    console.log(tasksHtml);
+    //console.log(tasksHtml);
   
  
     
     document.querySelector("#taskList").innerHTML = tasksHtml;
-    console.log(tasksHtml)
+   // console.log(tasksHtml)
   }
 
   getTaskById(taskId) {
     let foundTask;
     for (let i = 0; i <= this.tasks.length; i++) {
       let task = this.tasks[i];
-      if (task.id === taskId) {
+      if (task.id == taskId) {
         foundTask = task;
+        return foundTask;
       } 
-    } return foundTask;
+    } 
   };
 }
 let taskCount = 0;
