@@ -1,5 +1,7 @@
 // this instatiate a task manager
 const tasks1 = new TaskManager();
+tasks1.load();
+tasks1.render();
 //Form validation function
 //Currently gets values from inputs in form and console logs them
 
@@ -45,6 +47,7 @@ function validFormFieldInput() {
         // errorMsg.remove();
         tasks1.addTasks(name, description, assignedTo, dueDate)
         tasks1.render();
+        tasks1.save();
         //console.log(tasks1.tasks);
        // let result = tasks1.getTaskById(1);
         //console.log(result);
