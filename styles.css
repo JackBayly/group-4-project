@@ -1,35 +1,48 @@
+
 .body {
-    background-color: #778da9;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    margin: 40 px;
+    background-color: #e9eff2;
+}
+
+#todo-form {
+
     margin: 35px;
 }
 
 h1, h2 {
-    background-color: #0d1b2a;
-    padding: 25px 0px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0D4C92;
+    margin: 40px;
+    padding: 15px;
     color: white;
+    border-radius: 10px;
+    margin: 25px;
+    border-style: solid;
+    border-color: #eb8d40;
+    border-width: 20px;
+
 }
 
-h2 {
-    margin: 25px 0px;
-}
+
 .custom-align-label-select {
     display: flex;
     flex-direction: column;
 }
 #select {
  height: 38px;
- border-radius: 0.25rem;
  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 .footer {
     background-color: #0d1b2a;
     color: lightgrey;
-    padding: 15px 0px;
+    padding: 15px;
+    margin: 35px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .form-row {
-    padding-left: 15px;
+    margin: 20px;
 }
 
 .container {
@@ -37,17 +50,39 @@ h2 {
 }
 
 .card-columns {
-    padding: 15px;
+    padding: 10px;
+    margin: 20px;
 }
 
 .card-title {
-    padding: 20px;
+    padding: 5px;
+    color: #0D4C92;
+}
+
+.card {
+    margin: 35px;
+    border-style: none;
+    border-color: transparent;
+    border-radius: 25%;
+    background-color: #e9eff2;
+    
+    
+
 }
 
 .card-body {
-    background-color: #e0e1dd;
+    background-color:  rgb(255, 255, 255) ;
     overflow: hidden;
-    max-height: 340px; 
+    max-height: 375px; 
+    border-style: solid;
+    border-color: #0D4C92;
+    border-width: 8px;
+    border-radius: 1px 35px 1px;
+
+    
+}
+.card-title {
+    font-weight: bolder;
 }
 .card-text {
     overflow: hidden;
@@ -59,4 +94,16 @@ h2 {
 
 li {
     list-style: none;
+    display: inline-block;
+    padding: 0px;
+
+
 }
+
+
+
+.col {
+    margin: 30px;
+    border: transparent;
+}
+

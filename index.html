@@ -10,22 +10,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap" rel="stylesheet">
     <script src="js\taskManager.js" defer></script>
     <script src="js\index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&family=Text+Me+One&display=swap" rel="stylesheet">
 </head>
-<body class="body">
+<body class = "body">
     <!--Header-->
-    <h1 class="text-center text-monospace fw-bold">Task List</h1>
+    <h1 class="text-center">Task List</h1>
 
                     <!--form body   -->
                     <form id="todo-form">
                     
                         <div class="form-row">
                             <div class="form-group col">
-                                <label for="taskname" class="text-center text-monospace fw-bold">Task Name</label>
+                                <label for="taskname" class="text-center">Task Name:</label>
                                 <input type="text" class="form-control" id="taskname">
                             </div>
                             <div class="form-group col">
                                 <div class="assigned-to custom-align-label-select">
-                                    <label for="select">Assigned To</label>
+                                    <label for="select">Assigned To:</label>
                                     <select id="select">
                                         <option></option>
                                         <option>Carlos</option>
@@ -42,58 +43,58 @@
       
                         <div class="form-row">
                             <div class="form-group col">
-                                <label for="description">Description</label>
-                                <textarea class="form-control" id="description" rows="6"></textarea>
+                                <label for="description">Description:</label>
+                                <textarea class="form-control" id="description" rows="5"></textarea>
                             </div>
-                        </div>
-
                         <div class="form-group col">
-                            <label for="dueDate">Due Date</label>
+                            <div class="form-row">
+                            <label for="dueDate">Due Date:</label>
                             <input type="date" class="form-control" id="dueDate">
                         </div> 
+                        <div class="form-row">
+                            <button type="button" form="todo-form" class="btn btn-outline-info btn-lg btn-block" id="formSubmitBtn" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                Add Task
+                            </button>
+                        </div>
                     </div>
-                    <div class="container">
-                        <button type="button" form="todo-form" class="btn btn-primary" id="formSubmitBtn" data-toggle="button" aria-pressed="false" autocomplete="off">
-                            Add Task
-                        </button>
                     </div>
                     </form>
 
                    
                 
-                    <h2 class="text-center">Assigned Task List</h2>
+                    <h2 class="text-center">Assigned Tasks</h2>
     <ul id = "taskList">
         <!--Cards-->
                 <div class="card-columns">
                     
-                        <div class="card" style="width: 20rem;">
+                        <div class="card">
                             
                             <div class="card-body">
-                            <h3 class="card-title">Task Name: Go Home</h3>
+                            <h3 class="card-title">Go Home</h3>
                             <p class="assignment">Assigned to: Paris Lucas</p>
                             <p class="due">Due: 9/27/22</p>
-                            <p class="card-text">Task Description: Leave the building and go home.</p>
+                            <p class="card-text">Description: Leave the building and go home.</p>
                                 <a href="#" class="btn btn-primary">In Progress</a>
                                 <a href="#" class="btn btn-danger">Delete</a> 
                                 <!-- are we  doing an edit option? -->
                             </div>
                         </div>
                         
-                        <div class="card" style="width: 20rem;">
+                        <div class="card" >
                             <div class="card-body">
-                            <h3 class="card-title">Task Name: Go Home</h3>
+                            <h3 class="card-title">Go Home</h3>
                             <p class="assignment">Assigned to: Paris Lucas</p>
                             <p class="due">Due: 9/27/22</p>
-                            <p class="card-text">Task Description: Leave the building and go home.</p>
+                            <p class="card-text">Description: Leave the building and go home.</p>
                                 <a href="#" class="btn btn-success">Done</a>
                                 <a href="#" class="btn btn-danger">Delete</a> 
                                 <!-- are we  doing an edit option? -->
                             </div>
                         </div>
                         
-                        <div class="card" style="width: 20rem;">
+                        <div class="card" >
                             <div class="card-body">
-                            <h3 class="card-title">Task Name: Go Home</h3>
+                            <h3 class="card-title">Go Home</h3>
                             <p class="assignment">Assigned to: Paris Lucas</p>
                             <p class="due">Due: 9/27/22</p>
                             <p class="card-text">Task Description: Leave the building and go home.</p>
@@ -106,36 +107,36 @@
             
         <div class="card-columns">
                 
-                <div class="card" style="width: 20rem;">
+                <div class="card" >
                     <div class="card-body">
-                    <h3 class="card-title">Task Name: Go Home</h3>
+                    <h3 class="card-title">Go Home</h3>
                     <p class="assignment">Assigned to: Paris Lucas</p>
                     <p class="due">Due: 9/27/22</p>
-                    <p class="card-text">This tasks means you need to add some HTML for the Task cards shjfanvsdiohbvn fshsgvnsdvb shvnskbnsi ihnsgvdisvn hnosgnvsdivn sgvspjnsnbsjoid sbspnbsdmvpsojbs pfj.</p>
+                    <p class="card-text">Description: This tasks means you need to add some HTML for the Task cards shjfanvsdiohbvn fshsgvnsdvb shvnskbnsi ihnsgvdisvn hnosgnvsdivn sgvspjnsnbsjoid sbspnbsdmvpsojbs pfj.</p>
                         <a href="#" class="btn btn-success">Done</a>
                         <a href="#" class="btn btn-danger">Delete</a> 
                         <!-- are we  doing an edit option? -->
                     </div>
                 </div>
     
-                <div class="card" style="width: 20rem;">
+                <div class="card" >
                     <div class="card-body">
-                    <h3 class="card-title">Task Name: Go Home</h3>
+                    <h3 class="card-title">Go Home</h3>
                     <p class="assignment">Assigned to: Paris Lucas</p>
                     <p class="due">Due: 9/27/22</p>
-                    <p class="card-text">Task Description: uhvnusdnvbsdjk vjsvnsdvjsbnsfv ishsdv svosijvsbv svsoijbdsi spsbjsidvhns yaha havg sdi.</p>
+                    <p class="card-text">Description: uhvnusdnvbsdjk vjsvnsdvjsbnsfv ishsdv svosijvsbv svsoijbdsi spsbjsidvhns yaha havg sdi.</p>
                         <a href="#" class="btn btn-success">Done</a>
                         <a href="#" class="btn btn-danger">Delete</a> 
                         <!-- are we  doing an edit option? -->
                     </div>
                 </div>
 
-                <div class="card" style="width: 20rem;">
+                <div class="card" >
                     <div class="card-body">
-                        <h3 class="card-title">Task Name: Go Home</h3>
+                        <h3 class="card-title">Go Home</h3>
                         <p class="assignment">Assigned to: Paris Lucas</p>
                         <p class="due">Due: 9/27/22</p>
-                        <p class="card-text">Do the Task. Do the Task. Do the Task. Do the Task. Do the Task. Do the Task. Do the Task.</p>
+                        <p class="card-text">Description: Do the Task. Do the Task. Do the Task. Do the Task. Do the Task. Do the Task. Do the Task.</p>
                         <a href="#" class="btn btn-success">Done</a>
                         <a href="#" class="btn btn-danger">Delete</a> 
                         <!-- are we  doing an edit option? -->
@@ -144,36 +145,36 @@
         </div>
         <div class="card-columns">
                 
-                <div class="card" style="width: 20rem;">
+                <div class="card" >
                     <div class="card-body">
-                    <h3 class="card-title">Task Name: Go Home</h3>
+                    <h3 class="card-title">Go Home</h3>
                     <p class="assignment">Assigned to: Paris Lucas</p>
                     <p class="due">Due: 9/27/22</p>
-                    <p class="card-text">Task Description: Leave the building and go home.</p>
+                    <p class="card-text">Description: Leave the building and go home.</p>
                         <a href="#" class="btn btn-success">Done</a>
                         <a href="#" class="btn btn-danger">Delete</a> 
                         <!-- are we  doing an edit option? -->
                     </div>
                 </div>
                 
-                <div class="card" style="width: 20rem;">
+                <div class="card" >
                     <div class="card-body">
-                    <h3 class="card-title">Task Name: Go Home</h3>
+                    <h3 class="card-title">Go Home</h3>
                     <p class="assignment">Assigned to: Paris Lucas</p>
                     <p class="due">Due: 9/27/22</p>
-                    <p class="card-text">Task Description: Leave the building and go home.</p>
+                    <p class="card-text">Description: Leave the building and go home.</p>
                         <a href="#" class="btn btn-success">Done</a>
                         <a href="#" class="btn btn-danger">Delete</a> 
                         <!-- are we  doing an edit option? -->
                     </div>
                 </div>
                 
-                <div class="card" style="width: 20rem;">
+                <div class="card" >
                     <div class="card-body">
-                    <h3 class="card-title">Task Name: Go Home</h3>
+                    <h3 class="card-title">Go Home</h3>
                     <p class="assignment">Assigned to: Paris Lucas</p>
                     <p class="due">Due: 9/27/22</p>
-                    <p class="card-text">Task Description: Leave the building and go home.</p>
+                    <p class="card-text">Description: Leave the building and go home.</p>
                         <a href="#" class="btn btn-success">Done</a>
                         <a href="#" class="btn btn-danger">Delete</a> 
                         <!-- are we  doing an edit option? -->
@@ -183,8 +184,8 @@
     </ul>
 </body>
 <footer class="footer">
-    <h4 class="text-center fw-light">Coded By:</h4>
-    <p class="text-center font-italic fw-light">
+    <h4 class="text-center">Coded By:</h4>
+    <p class="text-center">
         Jack O'Hara, Jocelyn Fields, Dunamis Anthony, Iyadunni Idowu, Paris Lucas, Carlos Martinez
     </p>
 </footer>

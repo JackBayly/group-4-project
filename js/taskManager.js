@@ -5,10 +5,10 @@ const createTaskHtml = (name, description, assignedTo, dueDate, status, currentI
            `<li class = "parentTask" id = "${currentId}">  
                     <div class="card" style="width: 20rem;">
                       <div class="card-body">
-                        <h3 class="card-title">Task Name: ${name}</h3>
+                        <h3 class="card-title">${name}</h3>
                         <p class="assignment">Assigned to: ${assignedTo}</p>
                         <p class="due">Due: ${dueDate}</p>
-                        <p class="card-text">Task Description: ${description}</p>
+                        <p class="card-text">Description: ${description}</p>
                         <span class="status"> ${status}</span> <br>
                             <a href="#" class="btn btn-success">Done</a>
                             <a href="#" class="btn btn-danger">Delete</a> 
@@ -52,7 +52,7 @@ constructor(currentId) {
     //change date format to mm/dd/yyyy
     let formattedDate = (date.getMonth() + 1) + "/" + (date.getDate() + 1) + "/" + date.getFullYear();
     //task 6 step 2 #3.iv
-    let taskHTML = createTaskHtml(currentTask.name, currentTask.description, currentTask.assignTo, formattedDate, currentTask.status, this.currentId)
+    let taskHTML = createTaskHtml(currentTask.name, currentTask.description, currentTask.assignTo, formattedDate, currentTask.status, currentTask.id)
     tasksHtmlList.push(taskHTML)
     }
     let tasksHtml = tasksHtmlList.join('\n')
