@@ -5,10 +5,10 @@ const createTaskHtml = (name, description, assignedTo, dueDate, status, currentI
     `<li class = "parentTask" id = "${currentId}">  
                     <div class="card" style="width: 20rem;">
                       <div class="card-body">
-                        <h3 class="card-title">Task Name: ${name}</h3>
+                        <h3 class="card-title">${name}</h3>
                         <p class="assignment">Assigned to: ${assignedTo}</p>
                         <p class="due">Due: ${dueDate}</p>
-                        <p class="card-text">Task Description: ${description}</p>
+                        <p class="card-text">Description: ${description}</p>
                         <span class="status"> ${status}</span> <br>
                            
                         <button type="button" class="btn btn-outline-success done-button" >Mark as Done</button>
@@ -46,6 +46,7 @@ class TaskManager {
     console.log(this.tasks);
     let tasksHtmlList = []
     for (let taskNumber = 0; taskNumber < this.tasks.length; taskNumber++) {
+
       //store tasklist item in a variable
       let currentTask = this.tasks[taskNumber]
       let date = new Date(currentTask.dueDate)
