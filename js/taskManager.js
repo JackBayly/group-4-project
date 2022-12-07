@@ -11,9 +11,9 @@ const createTaskHtml = (name, description, assignedTo, dueDate, status, currentI
                         <p class="card-text">Task Description: ${description}</p>
                         <span class="status"> ${status}</span> <br>
                            
-
-                            <button type="button" class="btn btn-outline-success btn-danger delete-button" >Delete</button>
                         <button type="button" class="btn btn-outline-success done-button" >Mark as Done</button>
+                            <button type="button" class="btn btn-danger delete-button">Delete</button>
+                        
                             
                             
 
@@ -38,7 +38,7 @@ class TaskManager {
 
   addTasks(name, description, assignTo, dueDate, status) {
   //  this.currentId++;
-    status = 'TODO';
+    status = 'TO DO';
    let id = this.currentId++;
     this.tasks.push({ name, description, assignTo, dueDate, status, id })
   }
