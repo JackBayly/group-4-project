@@ -1,18 +1,23 @@
 //step 1 create a function using template literals to return the HTML for each individual task
 const createTaskHtml = (name, description, assignedTo, dueDate, status, currentId) => {
 
+
+  let doneButton = "visible";
+	if (status === "DONE") {
+		doneButton = "invisible"
+    ; 
+    }
   const html =
     `<li class = "parentTask" id = "${currentId}">  
                     <div class="card" style="width: 20rem;">
                       <div class="card-body">
                         <h3 class="card-title">${name}</h3>
+                        <p class="status"> Status: ${status}</p>
                         <p class="assignment">Assigned to: ${assignedTo}</p>
                         <p class="due">Due: ${dueDate}</p>
                         <p class="card-text">Description: ${description}</p>
-                        <span class="status"> ${status}</span> <br>
-                           
-                        <button type="button" class="btn btn-outline-success done-button" >Mark as Done</button>
-                            <button type="button" class="btn btn-outline-danger delete-button">Delete</button>
+                        <button type="button" class="btn btn-outline-danger delete-button">Delete</button>
+                        <button type="button" class="btn btn-outline-success done-button ${doneButton}" >Mark as Done</button>
                         
                             
                             
@@ -38,7 +43,7 @@ class TaskManager {
 
   addTasks(name, description, assignTo, dueDate, status) {
   //  this.currentId++;
-    status = 'TO DO';
+    status = 'PENDING';
    let id = this.currentId++;
     this.tasks.push({ name, description, assignTo, dueDate, status, id })
   }

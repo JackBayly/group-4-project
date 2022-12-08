@@ -2,7 +2,8 @@
 .body {
     font-family: 'Quicksand', sans-serif;
     margin: 40 px;
-    background-color: #e9eff2;
+    background-color: #e8e8e8;
+
 }
 
 #todo-form {
@@ -13,7 +14,7 @@
 label {
 
     font-family: 'Quicksand', sans-serif;
-    font-size: large;
+    font-size: larger;
     font-weight: bold;
     color: #0D4C92;
 
@@ -23,7 +24,7 @@ input, select, textarea {
     border-style: solid !important;
     border-color: #eb8d40 !important;
     border-width: 5px !important;
-    border-radius: 16px !important;
+    border-radius: 12px !important;
   }
 
 h1, h2 {
@@ -33,9 +34,8 @@ h1, h2 {
     padding: 15px;
     color: white;
     border-radius: 15px;
-    margin: 25px;
     border-style: solid;
-    border-color: #eb8d40;
+    border-color: #EF9A53;
     border-width: 15px;
 
 }
@@ -49,9 +49,11 @@ h1, h2 {
  height: 45px;
  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
+
 .footer {
-    background-color: #0d1b2a;
-    color: lightgrey;
+    background-color: #EF9A53;
+    color: rgb(255, 255, 255);
+    font-size: larger;
     padding: 15px;
     margin: 35px;
     font-family: 'Quicksand', sans-serif;
@@ -61,63 +63,46 @@ h1, h2 {
     margin: 20px;
 }
 
-.container {
-    margin: 20px;
-}
-
-.card-columns {
-    padding: 10px;
-    margin: 20px;
-}
-
 .card-title {
     padding: 5px;
     color: #0D4C92;
+    font-size: larger;
+    font-weight: bolder;
+    height: 15%;
+
 }
 
 .card {
-    margin: 35px;
+    margin: 55px;
     border: none !important;
     background-color: transparent !important;
-
-    
-    
-
 }
 
 .card-body {
     background-color:  rgb(255, 255, 255) ;
-    background-clip: padding-box !important;
-    box-sizing: padding-box !important;
-    overflow: hidden;
-    max-height: 375px; 
+    height: 375px; 
+    width: 375px; 
     border-style: solid;
     border-color: #eb8d40;
     border-width: 8px;
     border-radius: 20px;
 
-    
 }
-.card-title {
-    font-weight: bolder;
-}
+
 .card-text {
     overflow: hidden;
-    max-height: 48px;
+    height: 115px;
 }
 .card-text:hover {
-    overflow:scroll;
+    overflow:scroll; 
 }
 
 li {
     list-style: none;
     display: inline-block;
-    /* padding: 0px; */
-
+  
 
 }
-
-
 
 .col {
     margin: 30px;
@@ -132,4 +117,11 @@ li {
     border-width: 5px !important;
     border-radius: 20px !important;
     
+}
+.assignment, .due, .status {
+    line-height: 1;
+}
+
+.status {
+    font-weight: bold;
 }

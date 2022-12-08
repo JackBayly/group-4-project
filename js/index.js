@@ -6,6 +6,7 @@ tasks1.render();
 //Currently gets values from inputs in form and console logs them
 
 
+
 function validFormFieldInput() {
 //inputs and their values
     const taskName = document.querySelector('#taskname');
@@ -72,10 +73,10 @@ taskList.addEventListener('click', (event) => {
      if (doneClicked) {
         taskList = event.target.closest("li");
         let taskId   = Number(taskList.id);
-
         let task =  tasks1.getTaskById(taskId);
-       task.status = "Done";
+       task.status = "DONE";
        tasks1.render();
+       
        
         console.log('clicked')
      } else {

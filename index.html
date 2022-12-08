@@ -21,14 +21,12 @@
 
     <!--Header-->
     <h1 class="text-center">Task List</h1>
-
-                    <!--form body   -->
+        <!--form body   -->
                     <form id="todo-form">
-                    
                         <div class="form-row">
                             <div class="form-group col">
                                 <label for="taskname" class="text-center">Task Name:</label>
-                                <input type="text" class="form-control" id="taskname">
+                                <input type="text" class="form-control" id="taskname" maxlength="45">
                             </div>
                             <div class="form-group col">
                                 <div class="assigned-to custom-align-label-select">
@@ -71,9 +69,9 @@
                     <h2 class="text-center">Assigned Tasks</h2>
     <ul id = "taskList">
         <!--Cards-->
-                <div class="card-columns">
+                <div class="card-columns align-self-start">
                     
-                        <div class="card">
+                        <div class="card hei">
                             
                             <div class="card-body">
                             <h3 class="card-title">Go Home</h3>
@@ -109,88 +107,7 @@
                                 <!-- are we  doing an edit option? -->
                             </div>
                         </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="form-row">
-            <div class="form-group col">
-                <label for="description">Description</label>
-                <textarea class="form-control" id="description" rows="6"></textarea>
-            </div>
-        </div>
-
-        <div class="form-group col">
-            <label for="dueDate">Due Date</label>
-            <input type="date" class="form-control" id="dueDate">
-        </div>
-        </div>
-        <div class="container">
-            <button type="button" form="todo-form" class="btn btn-primary" id="formSubmitBtn" data-toggle="button"
-                aria-pressed="false" autocomplete="off">
-                Add Task
-            </button>
-        </div>
-    </form>
-
-
-
-    <h2 class="text-center">Assigned Task List</h2>
-    <ul id="taskList">
-        <!--Cards-->
-        <div class="card-columns">
-                
-                <div class="card" >
-                    <div class="card-body">
-                    <h3 class="card-title">Go Home</h3>
-                    <p class="assignment">Assigned to: Paris Lucas</p>
-                    <p class="due">Due: 9/27/22</p>
-                    <p class="card-text">Description: This tasks means you need to add some HTML for the Task cards shjfanvsdiohbvn fshsgvnsdvb shvnskbnsi ihnsgvdisvn hnosgnvsdivn sgvspjnsnbsjoid sbspnbsdmvpsojbs pfj.</p>
-                        <a href="#" class="btn btn-success">Done</a>
-                        <a href="#" class="btn btn-danger">Delete</a> 
-                        <!-- are we  doing an edit option? -->
-                    </div>
-                </div>
     
-                <div class="card" >
-                    <div class="card-body">
-                    <h3 class="card-title">Go Home</h3>
-                    <p class="assignment">Assigned to: Paris Lucas</p>
-                    <p class="due">Due: 9/27/22</p>
-                    <p class="card-text">Description: uhvnusdnvbsdjk vjsvnsdvjsbnsfv ishsdv svosijvsbv svsoijbdsi spsbjsidvhns yaha havg sdi.</p>
-                        <a href="#" class="btn btn-success">Done</a>
-                        <a href="#" class="btn btn-danger">Delete</a> 
-                        <!-- are we  doing an edit option? -->
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <div class="card-body">
-                        <h3 class="card-title">Go Home</h3>
-                        <p class="assignment">Assigned to: Paris Lucas</p>
-                        <p class="due">Due: 9/27/22</p>
-                        <p class="card-text">Description: Do the Task. Do the Task. Do the Task. Do the Task. Do the Task. Do the Task. Do the Task.</p>
-                        <a href="#" class="btn btn-success">Done</a>
-                        <a href="#" class="btn btn-danger">Delete</a> 
-                        <!-- are we  doing an edit option? -->
-                    </div>
-                </div>
-        </div>
-        <div class="card-columns">
-                
-                <div class="card" >
-                    <div class="card-body">
-                    <h3 class="card-title">Go Home</h3>
-                    <p class="assignment">Assigned to: Paris Lucas</p>
-                    <p class="due">Due: 9/27/22</p>
-                    <p class="card-text">Description: Leave the building and go home.</p>
-                        <a href="#" class="btn btn-success">Done</a>
-                        <a href="#" class="btn btn-danger">Delete</a> 
-                        <!-- are we  doing an edit option? -->
-                    </div>
-                </div>
-                
                 <div class="card" >
                     <div class="card-body">
                     <h3 class="card-title">Go Home</h3>
