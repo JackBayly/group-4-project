@@ -12,7 +12,7 @@ const createTaskHtml = (name, description, assignedTo, dueDate, status, currentI
                         <span class="status"> ${status}</span> <br>
                            
                         <button type="button" class="btn btn-outline-success done-button" >Mark as Done</button>
-                            <button type="button" class="btn btn-danger delete-button">Delete</button>
+                            <button type="button" class="btn btn-outline-danger delete-button">Delete</button>
                         
                             
                             

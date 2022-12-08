@@ -10,17 +10,33 @@
     margin: 35px;
 }
 
+label {
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: #0D4C92;
+
+}
+
+input, select, textarea {
+    border-style: solid !important;
+    border-color: #eb8d40 !important;
+    border-width: 5px !important;
+    border-radius: 16px !important;
+  }
+
 h1, h2 {
     font-family: 'Quicksand', sans-serif;
     background-color: #0D4C92;
     margin: 40px;
     padding: 15px;
     color: white;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 25px;
     border-style: solid;
     border-color: #eb8d40;
-    border-width: 20px;
+    border-width: 15px;
 
 }
 
@@ -29,8 +45,8 @@ h1, h2 {
     display: flex;
     flex-direction: column;
 }
-#select {
- height: 38px;
+#select , #taskname, #dueDate {
+ height: 45px;
  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 .footer {
@@ -61,10 +77,9 @@ h1, h2 {
 
 .card {
     margin: 35px;
-    border-style: none;
-    border-color: transparent;
-    border-radius: 25%;
-    background-color: #e9eff2;
+    border: none !important;
+    background-color: transparent !important;
+
     
     
 
@@ -72,12 +87,14 @@ h1, h2 {
 
 .card-body {
     background-color:  rgb(255, 255, 255) ;
+    background-clip: padding-box !important;
+    box-sizing: padding-box !important;
     overflow: hidden;
     max-height: 375px; 
     border-style: solid;
-    border-color: #0D4C92;
+    border-color: #eb8d40;
     border-width: 8px;
-    border-radius: 1px 35px 1px;
+    border-radius: 20px;
 
     
 }
@@ -95,7 +112,7 @@ h1, h2 {
 li {
     list-style: none;
     display: inline-block;
-    padding: 0px;
+    /* padding: 0px; */
 
 
 }
@@ -107,3 +124,12 @@ li {
     border: transparent;
 }
 
+.btn-block {
+    background-color: #0D4C92!important;
+    color:white !important;
+    border-style: outset !important;
+    border-color:  #0D4C92 !important;
+    border-width: 5px !important;
+    border-radius: 20px !important;
+    
+}
