@@ -1,0 +1,26 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "<p>This is a task manager app made as part of the Generation USA Jr Web Developer Bootcamp. It was built with HTML, CSS, and Bootstrap.</p>\r <p>Here is a live demo: https://jackbayly.github.io/group-4-project/</p>\r <p>Collaborators include Carlos Martinez (CarlosM35), Dunamis Anthony (Dunamis234), Iyadunni Idowu (coding83cutie), Jack O'Hara (JackBayly), Jocelyn Fields (Jocelyn Fields), and Paris Lucas (lbparis).",
+  "main": "index.js",
+  "type": "module" ,
+  "scripts": {
+    "test": "mocha"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackBayly/group-4-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackBayly/group-4-project/issues"
+  },
+  "homepage": "https://github.com/JackBayly/group-4-project#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}

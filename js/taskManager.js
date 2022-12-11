@@ -121,5 +121,4 @@ let taskCount = 0;
 
 
 
-
-//exports.TaskManager = TaskManager;
+export {TaskManager};

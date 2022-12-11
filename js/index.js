@@ -1,3 +1,4 @@
+import { TaskManager } from "./taskManager.js";
 // this instatiate a task manager
 const tasks1 = new TaskManager();
 tasks1.load();
