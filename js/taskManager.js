@@ -1,4 +1,3 @@
-//step 1 create a function using template literals to return the HTML for each individual task
 const createTaskHtml = (name, description, assignedTo, dueDate, status, currentId) => {
 
 
@@ -42,33 +41,27 @@ class TaskManager {
   }
 
   addTasks(name, description, assignTo, dueDate, status) {
-  //  this.currentId++;
     status = 'PENDING';
    let id = this.currentId++;
-    this.tasks.push({ name, description, assignTo, dueDate, status, id })
+    this.tasks.push({ name, description, assignTo, dueDate, status, id });
   }
   render() {
-    console.log(this.tasks);
     let tasksHtmlList = []
     for (let taskNumber = 0; taskNumber < this.tasks.length; taskNumber++) {
 
       //store tasklist item in a variable
       let currentTask = this.tasks[taskNumber]
       let date = new Date(currentTask.dueDate)
-      //console.log(date)
       //change date format to mm/dd/yyyy
       let formattedDate = (date.getMonth() + 1) + "/" + (date.getDate() + 1) + "/" + date.getFullYear();
-      //task 6 step 2 #3.iv
       let taskHTML = createTaskHtml(currentTask.name, currentTask.description, currentTask.assignTo, formattedDate, currentTask.status, currentTask.id)
       tasksHtmlList.push(taskHTML)
     }
     let tasksHtml = tasksHtmlList.join('\n')
-    //console.log(tasksHtml);
 
 
 
     document.querySelector("#taskList").innerHTML = tasksHtml;
-    // console.log(tasksHtml)
   }
   save() {
     let tasksJson = JSON.stringify(this.tasks);
@@ -77,12 +70,10 @@ class TaskManager {
     localStorage.setItem("currentId", currentId);
 
   }
-  // && (localStorage.getItem("currentId") != "" )
   load() {
     if (localStorage.getItem("tasks")) {
       let tasksJson = localStorage.getItem("tasks");
       this.tasks = JSON.parse(tasksJson);
-      
 
     }
     if(localStorage.getItem("currentId")){
@@ -94,9 +85,7 @@ class TaskManager {
   deleteTask(taskId) {
     let newTasks = [];
     for (let i = 0; i < this.tasks.length; i++) {
-      console.log(newTasks);
       let task = this.tasks[i];
-      console.log(taskId)
       if (task.id != taskId) {
         newTasks.push(task);
 
@@ -117,7 +106,6 @@ class TaskManager {
     }
   };
 }
-let taskCount = 0;
 
 
 

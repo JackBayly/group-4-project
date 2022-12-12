@@ -3,21 +3,17 @@
     font-family: 'Quicksand', sans-serif;
     margin: 40 px;
     background-color: #e8e8e8;
-
 }
 
 #todo-form {
-
     margin: 35px;
 }
 
 label {
-
     font-family: 'Quicksand', sans-serif;
     font-size: larger;
     font-weight: bold;
     color: #0D4C92;
-
 }
 
 input, select, textarea {
@@ -37,7 +33,6 @@ h1, h2 {
     border-style: solid;
     border-color: #EF9A53;
     border-width: 15px;
-
 }
 
 
@@ -69,7 +64,6 @@ h1, h2 {
     font-size: larger;
     font-weight: bolder;
     height: 15%;
-
 }
 
 .card {
@@ -86,7 +80,6 @@ h1, h2 {
     border-color: #eb8d40;
     border-width: 8px;
     border-radius: 20px;
-
 }
 
 .card-text {
@@ -100,8 +93,6 @@ h1, h2 {
 li {
     list-style: none;
     display: inline-block;
-  
-
 }
 
 .col {
@@ -116,7 +107,6 @@ li {
     border-color:  #0D4C92 !important;
     border-width: 5px !important;
     border-radius: 20px !important;
-    
 }
 .assignment, .due, .status {
     line-height: 1;
