@@ -3,12 +3,13 @@
 <p>Here is a live demo: https://jackbayly.github.io/group-4-project/</p>
 <p>Collaborators include Carlos Martinez (CarlosM35), Dunamis Anthony (Dunamis234), Iyadunni Idowu (coding83cutie), Jack O'Hara (JackBayly), Jocelyn Fields (JocelynCode), and Paris Lucas (lbparis).
 
-<h2>Things Learned/Practiced</h2>
+<h2>Technologies Used</h2>
 <ul>
-    <li>Used Mocha/Chai to test JavaScript methods</li>
-    <li>Event listeneres for button functionality</li>
+    <li>HTML</li>
+    <li>CSS</li>
     <li>Bootstrap elements for style</li>
     <li>OOP with JavaScript</li>
+    <li>Mocha/Chai to test JavaScript methods</li>
 </ul>
 
 <h2>Final Thoughts</h2>
