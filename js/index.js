@@ -18,6 +18,7 @@ function validFormFieldInput() {
 
     const taskDueDate = document.querySelector('#dueDate');
     const dueDate = taskDueDate.value;
+    
     //Checks if error message is present (to prevent duplicate messages)
     if (document.querySelector('#errorMsg') != null) {
         document.querySelector('#errorMsg').remove();
@@ -41,6 +42,10 @@ function validFormFieldInput() {
         tasks1.addTasks(name, description, assignedTo, dueDate)
         tasks1.render();
         tasks1.save();
+        taskName.value = ''
+        taskDescription.value = ''
+        taskAssignedTo.value = ''
+        taskDueDate.value = ''
 
     }
 
