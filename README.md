@@ -14,6 +14,8 @@
 <h2>Final Thoughts</h2>
 <p>We are very proud of this collaborative effort to create a responsive and stylish task manager app. This project is a demonstration of the collective knowledge and coding strengths of each collaborator. The end result is evidence of our great team work and we hope you enjoy it!</p>
 
-<img src="taskManager.jpg" alt="A screenshot of the task manager">
+<img src="https://user-images.githubusercontent.com/27658766/207064885-02ea64ec-e123-43c0-a91c-f7088d9fd2af.jpg" alt="A screenshot of the task manager">
+
+
 
 
